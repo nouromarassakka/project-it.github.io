@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./decorate.css">
+    <link rel="stylesheet" href="./java.js">
+    <link rel="icon" type="image/x-icon" href="1.png" >
+  </head>
+  <body>
+
+    <!--! soup Start -->
+    <div id="soup">
+        <div id="navbar">
+            <img src="./material/logo.png" alt="">
+            <button class="btn" id="icon"><span id="dark">switch mode</span></button>
+            <nav>
+              <ul>
+                <li><a href="./index.html">home</a></li>
+                    <li><a href="./pasta.html">pasta</a></li>
+                    <li><a href="./PizzaMenu.html">pizza</a></li>
+                    <li><a href="./Geno's.html">drinks</a></li>
+                    <li><a href="./dessert3.html">desserts</a></li>
+                    <li><a href="./soup.html">soups</a></li>
+                    <li><a href="./san.html">sandwishes</a></li>
+                    <li><a href="./Offers final.html">offers</a></li>
+                    <li><a href="./delivery form.html">delivery</a></li>
+                    <li><a href="./about.html" target="_blank">about&contact </a></li>
+              </ul>
+            </nav>
+            <link rel="icon" type="image/x-icon" href="1.png" >
+        </div>
+        <div class="content">
+          <div class="title">
+            <h2>Gino's soups</h2>
+            <a href="" class="btn btn-primary"><span class="buy_now">BUY NOW</span></a>
+          </div>
+          <div class="menu-items">
+            <div class="menu-items-left">
+              <h4>vegetarian dishes</h4>
+              <div class="menu-item">
+                <img src="./material/21.png" alt="">
+                <div>
+                  <h3>vegetables soup <span class="primary-text">$18.00</span></h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, esse.</p>
+                  <button class="btn add"><span class="add_to_cart">Add to cart</span></button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <img src="./material/23.png" alt="">
+                <div>
+                  <h3>lentil soup <span class="primary-text">$20.00</span></h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, esse.</p>
+                  <button class="btn add"><span class="add_to_cart">Add to cart</span></button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <img src="./material/24.png" alt="">
+                <div>
+                  <h3>mashroom soup <span class="primary-text">$52.99</span></h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, esse.</p>
+                  <button class="btn add"><span class="add_to_cart">Add to cart</span></button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <img src="./material/26.png" alt="">
+                <div>
+                  <h3>broccoli <span class="primary-text">$45.00</span></h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, esse.</p>
+                  <button class="btn add"><span class="add_to_cart">Add to cart</span></button>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="menu-items-right">
+              <h4>meat dishes</h4>
+              <div class="menu-item">
+                <img src="./material/20.png" alt="">
+                <div>
+                  <h3>kabab <span class="primary-text">$27.33</span></h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, esse.</p>
+                  <button class="btn add"><span class="add_to_cart">Add to cart</span></button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <img src="./material/25.png" alt="">
+                <div>
+                  <h3>meat soup <span class="primary-text">$55.00</span></h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, esse.</p>
+                  <button class="btn add"><span class="add_to_cart">Add to cart</span></button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <img src="./material/18.png" alt="">
+                <div>
+                  <h3>chicken soup <span class="primary-text">$40.00</span></h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, esse.</p>
+                  <button class="btn add"><span class="add_to_cart">Add to cart</span></button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <img src="./material/19.png" alt="">
+                <div>
+                  <h3>Shrimp soup <span class="primary-text">$180.22</span></h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, esse.</p>
+                  <button class="btn add"><span class="add_to_cart">Add to cart</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <!--!soup End -->
+
+    <!--? java script Start  -->
+
+      <script>
+        let icon = document.getElementById("icon");
+        let dark = document.getElementById("dark");
+
+        icon.onclick = function(){
+          document.body.classList.toggle("darktheme");
+          if(document.body.classList.contains("darktheme")){
+            dark.innerHTML = "Light";
+          }
+          else{
+            dark.innerHTML = "Dark";
+          }
+        }
+
+      </script>
+
+    <!--? java script End  -->
+
+
+  </body>
+</html>

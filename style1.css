@@ -1,0 +1,455 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+/* Global Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Dark light mode toggle button */
+#theme22 {
+  background:black;
+  color: aliceblue; 
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: dancing script;
+  height: 50px;
+  width: 150px;
+  display: inline-block;
+  text-align: center;
+  padding: 12px 10px 30px 10px;
+}
+
+#theme22:hover {
+  color:#222241;
+  background:green;
+}
+
+/* Body */
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+/* Unordered list */
+ul {
+  list-style: none;
+}
+
+/* Anchor tags */
+a {
+  text-decoration: none;
+}
+
+/* Container class */
+.container {
+  background-color: white; 
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Utility classes */
+.primary-text {
+  color:#0e0e1d;
+  font-size: 100px;
+  font-weight: 800;
+  font-family: dancing script;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+}
+
+/* Not included in your original code */
+/*.btn-primary {
+  color: aliceblue;
+  border: 1px solid white;
+}*/
+
+.btn-secondary {
+  color: aliceblue;
+  background: #383848;
+  margin-top: 2rem;
+  font-family: dancing script;
+  margin-right: 300px;
+}
+
+.btn-secondary:hover {
+  
+  background:rgb(17, 70, 17);
+  
+}
+
+/* Not included in your original code */
+/*.btn-primary:hover {
+  background: green;
+}*/
+
+/* Header */
+header {
+  height: 100vh;
+  background: url('home.jpg') center center/cover no-repeat;
+  position: relative;
+}
+
+#navbar {
+  color:aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+ 
+}
+  #change{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    margin-left: 50px;
+  
+}
+
+#navbar img {
+  height: 120px;
+  width: 120px;
+  margin-left: 50px;
+}
+
+#navbar ul {
+  display: flex;
+  margin-right: 100px;
+  color:white;
+  font-weight: 500;
+
+}
+
+#navbar ul li a {
+  padding: 15px 20px;
+  color:black;
+  font-weight: 700;
+  
+}
+
+#navbar ul li a:hover {
+  border-bottom: 2px solid #222241;
+}
+
+header .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+}
+
+header .content h1 {
+  font-size: 30px;
+  color: white;
+}
+
+/* Not included in your original code */
+/*.header .content p {
+  margin: 20px 0 40px;
+  color: green;
+  font-size: 30px;
+  font-weight: 600;
+}*/
+
+/* Login section */
+.noo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+min-height: 45vh;
+}
+.wrapper {
+ width: 390px;
+ height: 420PX;
+ background:transparent;
+ border:2px solid rgb(255 , 255, 255,0.2);
+ backdrop-filter: blur(2px);
+ box-shadow: 0 0 10px rgba(0,0,0,.2);
+ color:aliceblue;
+ border-radius: 10px;
+ padding:30px 40px;
+
+
+}
+.wrapper h1{
+ font-size:44px;
+ text-align:center;
+font-family: dancing script;
+color:white;
+
+}
+.wrapper .input-box{
+position: relative;
+/* width:100%; */
+ height:30px;
+ margin:30px 0;
+ color: #383848;
+ 
+}
+.input-box input{
+ width: 300px;
+height: 40px;
+padding: 20px 20px 20px 80px; 
+background: transparent;
+ border:none;
+ outline:none;
+ border:2px solid rgba(255 , 255, 255 ,0.2);
+  border-radius: 40px;
+ font-size: 16px;
+ padding: 20px 45px 20px 20px; 
+ /* color: aliceblue; */
+}
+.input-box input:focus { /*it doesnt work with js , so i made it with css */
+ border:4px solid #222241;
+}
+.input-box input::placeholder{
+ color: rgb(189, 171, 171);
+
+}
+.input-box i{
+ position: absolute;
+ right:20px;
+ top:50%;
+ transform: translateY(-30%); /*بظبط بيها ال icons */ 
+ font-size: 20px;
+color:rgb(190, 194, 199);
+}
+.wrapper .remember-forgot{
+ display:flex;
+ justify-content: space-between;
+ font-size: 15px;
+ margin: -15px 0 15px;
+}
+.remember-forgot label input{
+ accent-color: rgb(161, 36, 36);
+ margin-right: 3px;
+ margin-top: 14px;
+}
+
+.remember-forgot a{
+ color: aliceblue; 
+ text-decoration: none;
+ margin-top: 12px;
+ font-weight: 500;
+}
+.remember-forgot a:hover{
+ text-decoration: underline;
+ color: red;
+}
+.wrapper .btn {
+width: 100%;
+ height: 45%;
+ background:#222241; border:none;
+ outline: none;
+ border-radius: 40px;
+ box-shadow: 0 0 10px rgb(0 , 0, 0 ,0.1);
+cursor: pointer;
+ font-size: 22px;
+ font-weight: 700;
+  font-family: dancing script;
+}
+.wrapper .btn:hover{
+ background: white;
+}
+.wrapper .register-link {
+ font-size: 15px;
+ text-align: center;
+ margin: 20px 0 15px;
+}
+.register-link p a {
+   color:aliceblue;
+   text-decoration: none;
+   font-weight: 600;
+}
+.register-link p a:hover {
+ text-decoration: underline;
+}
+/* login end */
+header::before {
+     content: "";
+     position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0 , 0, 0 ,0.6);
+}
+header * {
+ z-index : 10;
+}
+
+/* header end */
+/* about start */
+
+#about {
+ height:80vh;
+ display: flex;
+ justify-content: center;
+align-items: center;
+
+}
+
+#about .title{
+ text-align: center;
+ margin-bottom: 4rem;
+
+}
+#about h2 {
+ font-size: 40px;
+ color:green;
+ margin-bottom: 20px;
+ font-family: "Dancing Script"; 
+}
+#about .title p{
+ font-size: 30px;
+ color:#383848;
+ font-weight: 600;
+
+}
+#about .about-content{
+ display: flex;
+ justify-content: space-between;
+ 
+} 
+#about .about-content img{
+ width: 300px;
+}
+#about .about-content p {
+ color:black;
+ margin-right: 7rem;
+ font-weight: 500;
+ line-height: 1.6;
+}
+/* about end */
+/* contact start */
+#contact {
+ padding: 5rem 0;
+ background-color: white;
+ color : black;
+ margin-right: 200px;
+
+}
+#contact .container {
+ max-width: 900px;
+ 
+}
+#contact .contact-content {
+  display: flex;
+ justify-content: center;
+ align-items: center;
+}
+#download{
+  margin-left: 300px;
+  margin-bottom: 5px;
+  
+}
+#editimgs{
+  display: flex;
+  width:120px;
+  height: 120px;
+  margin-bottom: 20px;
+
+}
+ #spacepar{
+  margin-bottom: 10px;
+} 
+.xxxx{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  display: block;
+ 
+}
+.xxxx:hover{
+  transform: scale(1.3);
+  z-index: 2;
+}
+#theapp{
+  background:#222241;
+  color: aliceblue; 
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: dancing script;
+  height: 50px;
+  width: 150px;
+  display: inline-block;
+  text-align: center;
+  padding: 12px 10px 30px 10px;
+  margin-top: 10px;
+}
+#theapp:hover{
+  background: green;
+}
+#contact .contact-content .contact-info {
+ width: 50% ;
+
+}
+#contact .contact-content .contact-info div {
+     margin: 30px 0;
+ line-height:1.7;
+}
+#contact .contact-content .contact-info h3{
+color:#222241;
+font-size: 28px;
+ margin-bottom: 10px;
+
+}
+#contact .contact-content .contact-info p{
+ color: #9a9a9a;
+}
+#contact .contact-content .contact-info i{
+color:#222241;
+ margin-right: 5px;
+}
+#contact .contact-content .contact-info a i{
+ color:white;
+ background-color:#383848;
+ padding:15px;
+ border-radius: 50%;
+ font-size: 20px;
+
+}
+#contact .contact-content .contact-info a i:hover{
+ background: green ;
+ color:black;
+}
+
+
+/* contact end */
+/* footer start */
+#footer{
+ background:#222241;
+ text-align: center;
+ color:aliceblue;
+ padding:15px 0;
+font-size:14px; 
+}
+#footer a{
+     color:#222241;
+}
+/* footer end */
