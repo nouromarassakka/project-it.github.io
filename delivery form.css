@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+body{
+    background-color:var(--primary-color);
+     height: 100vh;
+    padding: 20px;
+    font-family: "Quicksand", sans-serif;
+   }
+body .display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar img{
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+  }
+   #theme22 {
+    background:black;
+    color: aliceblue; 
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: dancing script;
+    height: 50px;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    padding: 12px 10px 30px 10px;
+
+  }
+
+  
+  
+  #theme22:hover {
+    color:#222241;
+    background:white;
+  }
+:root{
+    --primary-color:rgb(0,0,0,0.85);
+    --secondary-color:green;
+    --thr-color:red;
+    --fourth-color:white;
+    --fifth-color:rgb(255, 255, 0);
+    --sixth-color:rgb(1, 71, 4);
+    --seveth-color: red;
+  
+   }
+  .lighttheme{
+    --primary-color:rgb(185, 185, 185);
+    --secondary-color:rgb(22, 2, 70);
+    --thr-color:rgb(41, 13, 49);
+    --fourth-color:black;
+    --fifth-color:rgb(114, 0, 0);
+    --sixth-color:rgb(1, 71, 65);
+    --seveth-color: rgb(90, 4, 54);
+  }
+  
+button #theme22{
+    padding: 0px:
+  }
+  
+#color p{
+    color: var(--sixth-color);
+  }
+h1{
+      text-align: center;
+      font-style: italic;
+      color: var(--thr-color);
+      font-size:80px;
+  }
+.container{
+    max-width: 700px;
+    width: 100%;
+ padding: 25px 30px;
+position: relative; 
+}
+.container .title{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    padding: 30px;
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+    width: calc(100% / 2-20px);
+ margin-bottom: 15px;
+
+
+}
+.user-details .input-box .details{
+    display: block;
+    font-weight: 400;
+    margin-bottom: 4px;
+
+}
+.user-details .input-box input{
+height: 35px;
+width: 100%;
+outline: none;
+padding-left: 15px;
+border-radius: 5px;
+font-size: 18px;
+border-bottom-width: 2px;
+transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color:var(--secondary-color);
+}
+form .payment-details .payment{
+    font-size: 20px;
+    font-weight: 400;
+
+}
+form .payment-details .category{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 14px 0px;
+}
+
+
+.payment-details .category label{
+display: flex;
+align-items: center;
+}
+.payment-details .category .dot{
+    height: 9px;
+    width: 9px;
+ background-color:var(--fourth-color);  
+ border-radius: 50%;
+ margin-right: 10px;
+ border: 5px solid transparent;
+ transition: all 0.3s ease;
+}
+
+#dot1:checked ~ .category label .one,
+#dot2:checked ~ .category label .two{
+    border-color: #d9d9d9;
+    background: var(--sixth-color);
+
+}
+form input[type="radio"]{
+    display: none;
+}
+button{
+    height: 45px;
+    margin: 45px 0;
+}
+
+ button {
+    height: 100%;
+width: 100%;
+outline: none;
+background: linear-gradient(135deg,#353546,#d9d9d9);
+font-size: 20px;
+font-weight: 400;
+border-radius: 5px;
+letter-spacing: 2px;
+}
+button :hover{
+    background: linear-gradient(-135deg,#353546,#d9d9d9);
+}
+
+@media(max-width:584px){
+    .container{
+        max-width: 100%;}
+        form .user-details .input-box{
+            width: 100%;
+            margin: 15px;
+        }
+}
+
+#navbar {
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    list-style: none;
+  }
+
+  #navbar img {
+    width: 80px;
+    margin-left: 100px;
+  }
+  
+  nav ul {
+    display: flex;
+    margin-right: 100px;
+    list-style: none;
+  }
+  nav ul li a {
+    padding: 15px 20px;
+    font-weight: 600;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    border-bottom: 2px solid var(--thr-color);
+    list-style: none;
+  } 
+#footer{
+    background:var(--thr-color);
+    text-align: center;
+    color:aliceblue;
+    padding:15px 0;
+    font-size:14px; 
+}
+#footer a{
+    color:aliceblue;
+}

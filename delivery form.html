@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Form</title>
+    <link rel="stylesheet" href="delivery form.css">
+    <link rel="icon" type="image/x-icon" href="1.png" >
+</head>  
+<body>
+    <nav>  
+        <img id="icon"src="1.png" style="float:left;width:70px;height:70px;" > 
+        <ul>
+        <button onclick="dark()" id="theme22">Anoter theme</button>
+        <li><a href="./index.html">home</a></li>
+        <li><a href="./pasta.html">pasta</a></li>
+        <li><a href="./PizzaMenu.html">pizza</a></li>
+        <li><a href="./Geno's.html">drinks</a></li>
+        <li><a href="./dessert3.html">desserts</a></li>
+        <li><a href="./soup.html">soups</a></li>
+        <li><a href="./san.html">sandwishes</a></li>
+        <li><a href="./Offers final.html">offers</a></li>
+        <li><a href="./delivery form.html">delivery</a></li>
+        <li><a href="./about.html" target="_blank">about&contact </a></li>
+          </ul>
+    </nav>  
+    <h1>Welcome to Gino Restaurant</h1>
+    <div class="display">
+    <div class="container">
+        <div style="color: rgb(199, 113, 7);" class="title">Delivery</div>
+        <form action="#" id="deliveryform">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details" id="name">Full Name</span>
+                    <input type="text" placeholder="Enter Your Name " required>
+                </div>
+                <div class="input-box">
+                    <span class="details" id="email">Contact</span>
+                    <input type="email" placeholder="Enter Your Email " required>
+                </div>
+                <div class="input-box">
+                    <span class="details" id="address">Address</span>
+                    <input type="text" placeholder="Enter Your Address " required> <br>
+                    <input type="text" placeholder="Apartment, Suite, etc.(optional)" >
+                </div>
+                <div class="input-box">
+                    <span class="details">City</span>
+                    <input type="text" placeholder="Enter Your City " required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Governorate</span>
+                    <input type="text" placeholder="Enter Your Governorate" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Postal Code </span>
+                    <input type="text" placeholder="Enter Your Postal Code " >
+                </div>
+            </div> <br>
+            <div class="payment-details">
+                <input type="radio" name="billing" id="dot1">
+                <input type="radio"  name="billing" id="dot2">
+                <span class="payment">Payment</span>
+                <p id="color">All Transactions are secure and encrypted</p>
+                <div class="category">
+                    <label for="dot1">
+                        <span class="dot one"></span>
+                        <span class="billing">Credit Card</span>
+                    </label>
+                    <label for="dot2">
+                        <span class="dot two"></span>
+                        <span class="billing">Cash</span>
+                    </label>
+                </div>
+                <div class="button">
+
+                  <!-- <input type="submit" value="Pay Now">--> 
+                  <button onclick="myFunction()">Pay Now</button>
+                    <p id="demo"></p>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<footer id="footer">
+        <p>copyright &copy; 2024 All Rights reversed | Made By <b><a href="#" target="_blank"></a>GINO'S team</b></p>
+      </footer>
+      <script src="delivery form.js">
+</script>
+</body>
+</html>

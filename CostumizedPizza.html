@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>personalized pizza</title>
+    <link rel="icon" type="image/x-icon" href="../media/logo.png" >
+    <link rel="stylesheet" href="master.css" id="styleLink">
+    <script src="main.js"></script>
+</head>
+<body class="body1">
+    <header>
+        <nav class="nav1"> 
+            <ul>
+               <li><img src="media/logo.png"></li>
+               <li><button id="b1" onclick="dark()">switch mode</button></li>
+               <li><a href="./index.html">home</a></li>
+               <li><a href="./pasta.html">pasta</a></li>
+               <li><a href="./PizzaMenu.html">pizza</a></li>
+               <li><a href="./Geno's.html">drinks</a></li>
+               <li><a href="./dessert3.html">desserts</a></li>
+               <li><a href="./soup.html">soups</a></li>
+               <li><a href="./san.html">sandwishes</a></li>
+               <li><a href="./Offers final.html">offers</a></li>
+               <li><a href="./delivery form.html">delivery</a></li>
+               <li><a href="./about.html" target="_blank">about&contact </a></li>
+            </ul>
+        </nav>
+    <h1>Your pizza</h1>
+    <h2>you're the chef now</h2>
+    </header>
+    <hr>
+    <div class="costum">
+    <form action="/action_page.php" method="get">
+    <div class="doughtype">
+        <img src="media/dough.jpeg">
+        <div class="choices">
+            <h3>choose your dough type</h3>
+            <input type="radio" id="thin" name="dough1" value="thin"onchange="check()">
+            <label for="thin">thin</label>
+            <br>
+            <input type="radio" id="pan" name="dough1" value="pan"onchange="check()">
+            <label for="pan">pan</label>
+            <br>
+            <input type="radio" id="stuffedcrust" name="dough1" value="stuffed crust"onchange="check()">
+            <label for="stuffedcrust">stuffed crust</label>
+            <br>
+        </div>
+    </div>
+    <div class="veg">
+        <img src="media/veg.jpeg">
+        <div class="choices">
+            <h3>choose your vegetables</h3>
+            <input type="checkbox" id="tomato" name="vegetables" value="tomato"onchange="check()">
+            <label for="tomato">cherry tomato</label>
+            <br>
+            <input type="checkbox" id="mushroom" name="vegetables" value="mushroom"onchange="check()">
+            <label for="mushroom">mushroom</label>
+            <br>
+            <input type="checkbox" id="pepper" name="vegetables" value="pepper"onchange="check()">
+            <label for="pepper">green pepper</label>
+            <br>
+            <input type="checkbox" id="basil" name="vegetables" value="basil"onchange="check()">
+            <label for="basil">fresh basil</label>
+            <br>
+            <input type="checkbox" id="parsely" name="vegetables" value="parsely"onchange="check()">
+            <label for="parsely">fresh parsely</label>
+            <br>
+            <input type="checkbox" id="herbs" name="vegetables" value="herbs" onchange="check()">
+            <label for="herbs">fresh herbs</label>
+            <br>
+            <input type="checkbox" id="onions" name="vegetables" value="onions" onchange="check()">
+            <label for="onions">red onions</label>
+            <br>
+            <input type="checkbox" id="olives" name="vegetables" value="olives" onchange="check()">
+            <label for="olives">black olives</label>
+            <br>
+            <input type="checkbox" id="pinapple" name="vegetables" value="pinapple" onchange="check()">
+            <label for="pinapple">pinapple</label>
+            <br>
+        </div>
+    </div>
+    <div class="protien">
+        <img src="media/protien.jpeg">
+        <div class="choices">
+            <h3>choose your meat</h3>
+            <input type="checkbox" id="beef" name="protien" value="beef"onchange="check()">
+            <label for="beef">smoked beef</label>
+            <br>
+            <input type="checkbox" id="hams" name="protien" value="hams"onchange="check()">
+            <label for="hams">hams</label>
+            <br>
+            <input type="checkbox" id="bacon" name="protien" value="bacon"onchange="check()">
+            <label for="bacon">bacon</label>
+            <br>
+            <input type="checkbox" id="pepperoni" name="protien" value="pepperoni" onchange="check()">
+            <label for="pepperoni">pepperoni</label>
+            <br>
+            <input type="checkbox" id="chicken" name="protien" value="chicken" onchange="check()">
+            <label for="chicken">grilled chicken</label>
+            <br>
+            <input type="checkbox" id="salmon" name="protien" value="salmon" onchange="check()">
+            <label for="salmon">smoked salmon</label>
+            <br>
+            <input type="checkbox" id="shrimps" name="protien" value="shrimps" onchange="check()">
+            <label for="shrimps">shrimps</label>
+            <br>
+            <input type="checkbox" id="tuna" name="protien" value="tuna"  onchange="check()">
+            <label for="tuna">tuna</label>
+            <br>
+        </div>
+    </div>
+    <div class="sauce">
+        <img src="media/sauce.jpeg">
+        <div class="choices">
+            <h3>choose your sauce</h3>
+            <input type="checkbox" id="ranch" name="sauce" value="ranch" onchange="check()">
+            <label for="ranch">ranch sauce</label>
+            <br>
+            <input type="checkbox" id="BBQ" name="sauce" value="BBQ"  onchange="check()">
+            <label for="BBQ">BBQ sauce</label>
+            <br>
+            <input type="checkbox" id="katchup" name="sauce" value="katchup"  onchange="check()">
+            <label for="katchup">katchup</label>
+            <br>
+        </div>
+    </div>
+    <div class="mozzarella">
+        <img src="media/mozzarella.jpeg">
+        <div class="choices">
+            <h3>do you want mozzarella&#63</h3>
+            <input type="checkbox" id="mozzarella" name="mozzarella" value="mozzarella" onchange="check()">
+            <label for="mozzarella">mozzarella</label>
+            <br>
+        </div>
+    </div>
+    <div id="final">
+        <img src="media/final.jpeg">
+        <div class="f1">
+            <h3>press done to start preparing your pizza</h3>
+            <p></p>
+            <p id="p1"></p>
+        </div>
+    </div>
+    <p class="clear"> </p>
+    <input type="submit" value="Done" class="sub">
+    <input type="reset" value="restart" class="res">
+    </form>
+    </div>
+       <footer>
+        <p>copyright &copy; 2024 All Rights reversed | Made By <b><a href="#" target="_blank"></a>GINO'S team</b></p>
+      </footer>
+    </div>
+</body>
+</html>

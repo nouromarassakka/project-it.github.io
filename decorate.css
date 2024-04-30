@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: quicksand, dancing script;
+}
+
+/*? utility Classes */
+
+    :root{
+        --primary-color: white;
+        --secondary-color: #000000;
+    }
+
+    .darktheme{
+        --primary-color: #000000;
+        --secondary-color: #edf2fc;
+    }
+
+    #img1{
+        height: 100px;
+        width: 100px;
+        border-radius: 20%;
+        background: url("./material/img1.jpg") center center/cover no-repeat;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    ul{
+        list-style-type: none;
+    }
+    .btn{
+        display: inline-block;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 15px;
+    }
+    .btn-primary{
+        color: var(--secondary-color);
+        border: 1px var(--secondary-color) solid;
+        border-radius: 15px;
+    }
+    .btn-primary:hover{
+        background-color: red;
+    }
+    .add_to_cart{
+        color: var(--primary-color);
+    }
+
+/*!sansdwiches Start */
+
+    #header{
+        height: 200vh;
+        position: relative;
+        background-color: var(--primary-color);
+        transition: background 0.8s, color 0.8s;
+    }
+    #navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #navbar img{
+        width: 120px;
+        margin-left: 100px;
+    }
+    #navbar ul{
+        display: flex;
+        margin-right: 100px;
+    }
+
+    #navbar ul li a{
+        color: var(--secondary-color);
+        font-size: 600;
+        padding: 15px 20px;
+    }
+    #navbar ul li a:hover{
+        border-bottom: 2px solid green;
+    }
+    /* #header::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+    } */
+    #header *{
+        z-index: 10;
+    }
+
+
+
+    #header .content .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 30%;
+    }
+    #header .content .title h2{
+        color: red;
+        font-size: 50px;
+        margin-bottom: 10px;
+        font-family: dancing script;
+    }
+    #header .content .title p{
+        color: var(--secondary-color);
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    #header .content .title .free{
+        color: orange;
+        font-size: 25px;
+    }
+
+    #header .content .menu-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+    }
+
+    #header .content .menu-items .menu-items-left h4{
+        color: green;
+        padding-left: 150px;
+        padding-bottom: 10px;
+        font-size: 25px;
+        position: relative;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+
+    #header .content .menu-items .menu-items-left h4::before{
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 3px;
+        background-color: orange;
+        bottom: 0;
+        left: 27%;
+        transform: translateX(-50%);
+    }
+    @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px orange, 0 0 40px orange, 0 0 50px orange, 0 0 60px #e60073, 0 0 70px #e60073;
+        }
+        to {
+          text-shadow: 0 0 20px #fff, 0 0 30px orange, 0 0 40px orange, 0 0 50px orange, 0 0 60px orange, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+    }
+
+    #header .content .menu-items .menu-items-right h4{
+        color: green;
+        padding-left: 150px;
+        padding-bottom: 10px;
+        font-size: 25px;
+        position: relative;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+
+    #header .content .menu-items .menu-items-right h4::before{
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 3px;
+        background-color: orange;
+        bottom: 0;
+        left: 26%;
+        transform: translateX(-50%);
+    }
+
+    #header .content .menu-items .menu-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 150px;
+    }
+
+    #header .content .menu-items .menu-item img{
+        width: 100px;
+        height: 100px;
+        border-radius: 20%;
+        margin-right: 20px;
+        transition: .3s;
+    }
+
+    #header .content .menu-items .menu-item:hover img{
+        transform: scale(1.4, 1.4);
+    }
+
+    #header .content .menu-items .menu-item h3{
+        color: orange;
+        border-bottom: 1px dashed green;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    #header .content .menu-items .menu-item p{
+        color: var(--secondary-color);
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+
+    #header .content .menu-items .menu-item .add{
+        padding: 10px 10px;
+        background-color: var(--secondary-color);
+    }
+
+    #header .content .menu-items .menu-item .add:hover{
+        background-color: red;
+    }
+
+    #header .content .menu-items .menu-item .primary-text{
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: green;
+    }
+
+    #header .content .menu-items .menu-item .huge{
+        font-size: 28px;
+        color: red;
+    }
+    
+
+/*!sandwiches End */
+
+
+
+
+/** soup Start */
+
+
+
+#soup{
+    height: 200vh;
+    background-color: var(--primary-color);
+    /*background: url("./material/dark\ background.jpg") center center/cover no-repeat; */
+    position: relative;
+    transition: background 0.8s, color 0.8s;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+#navbar img{
+    width: 120px;
+    margin-left: 60px;
+}
+
+#icon{
+    /* margin: 0, 20px; */
+    background-color: var(--secondary-color);
+    margin-top: 7px;
+    /* background:black;
+    color: aliceblue;  */
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: dancing script;
+    height: 50px;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    padding: 12px 10px 30px 10px;
+}
+
+#dark{
+    color: var(--primary-color);
+    margin-top: 50px;
+}
+
+#navbar ul li a{
+    color: var(--secondary-color);
+    font-size: 600;
+    padding: 15px 15px;
+}
+#navbar ul li a:hover{
+    border-bottom: 2px solid green;
+}
+/* #soup::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+} */
+#soup *{
+    z-index: 10;
+}
+
+
+#soup .content .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+}
+#soup .content .title h2{
+    color: red;
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: dancing script;
+}
+#soup .content .title p{
+    color: var(--secondary-color);
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+#soup .content .title .free{
+    color: orange;
+    font-size: 25px;
+}
+
+#soup .content .buy_now{
+    color: var(--secondary-color);
+}
+
+#soup .content .menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+#soup .content .menu-items .menu-items-left h4{
+    color: green;
+    padding-left: 150px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    position: relative;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+#soup .content .menu-items .menu-items-left h4::before{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: orange;
+    bottom: 0;
+    left: 27%;
+    transform: translateX(-50%);
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px orange, 0 0 40px orange, 0 0 50px orange, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px orange, 0 0 40px orange, 0 0 50px orange, 0 0 60px orange, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+#soup .content .menu-items .menu-items-right h4{
+    color: green;
+    padding-left: 150px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    position: relative;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+#soup .content .menu-items .menu-items-right h4::before{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: orange;
+    bottom: 0;
+    left: 26%;
+    transform: translateX(-50%);
+}
+
+#soup .content .menu-items .menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 150px;
+}
+
+#soup .content .menu-items .menu-item img{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    transition: .3s;
+}
+
+#soup .content .menu-items .menu-item:hover img{
+    transform: scale(1.4, 1.4);
+}
+
+#soup .content .menu-items .menu-item h3{
+    color: orange;
+    border-bottom: 1px dashed green;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#soup .content .menu-items .menu-item p{
+    color: var(--secondary-color);
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+#soup .content .menu-items .menu-item .add{
+    padding: 10px 10px;
+    background-color: var(--secondary-color);
+}
+
+#soup .content .menu-items .menu-item .add:hover{
+    background-color: red;
+}
+
+#soup .content .menu-items .menu-item .primary-text{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: green;
+}
+
+#soup .content .menu-items .menu-item .huge{
+    font-size: 28px;
+    color: red;
+}
+
+
+/**soup End */
