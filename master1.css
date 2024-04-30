@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+*{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.body1{
+    background-color:white;
+}
+
+.nav1 ul{
+    display: flex;
+    /* margin-left: 50px; */
+    list-style-type:none;
+    align-items: center;
+}
+.nav1 ul li a,
+.nav1 ul li img{
+    padding: 15px 20px;
+    color:black;
+    font-weight: 600;
+    font-size:20px;
+    text-decoration: none;
+}
+.nav1 ul li a:hover{
+    border-bottom: 2px solid green;
+}
+.nav1 img{
+    margin:0px;
+    border:none;
+    height:110px;
+    width:110px;
+}
+#b1{
+    /* font-family:"dancing script";
+    font-size:19px;
+    cursor:pointer; */
+    color:white;
+    background-color:black;
+    /* background:black;
+    color: aliceblue;  */
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: dancing script;
+    height: 50px;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    padding: 12px 10px 30px 10px;
+}
+.body1 .menu dd button:hover,
+.body1 .menu dd select:hover,
+.nav1 button:hover,
+.sub:hover,
+.res:hover
+{
+    background-color:green;
+}
+.body1 input[type='radio']:checked + label,
+.body1 input[type='checkbox']:checked + label,
+.body1 .costum label:hover
+{
+    color:red;
+}
+.select1{
+    background-color:white;
+    text-align: center;
+    border-color:black;
+    color:black;
+    font-size:20px;
+    cursor: pointer;
+    border-radius:10px;
+}
+.body1 button{
+    cursor: pointer;
+    font-size:17px;
+    border-radius:10px;
+    background-color:black;
+    color:white;
+}
+.sub,
+.res{
+    background-color:black;
+    text-align: center;
+    border-color:black;
+    color:white;
+    font-size:20px;
+    cursor: pointer;
+    border-radius:10px;
+    margin: auto;
+    display: block;
+}
+.body1 h1{
+    text-align:center;
+    letter-spacing: 3px;
+    word-spacing: 9px;
+    font-size :80px;
+    margin:0px;
+    color:red;
+    margin: 0%;
+    padding: 0%;
+    width:100%;
+    font-weight: 800;
+    font-family: "dancing script";
+}
+.body1 h2{
+    text-align:center;
+    letter-spacing: 3px;
+    word-spacing: 9px;
+    font-size :30px;
+    margin:0px;
+    color:red;
+    margin: 0%;
+    padding: 0%;
+    width:100%;
+    font-weight: 800;
+    font-family: "dancing script"; 
+}
+.body1 h3{
+    color:green;
+    font-size:40px;
+    font-family:"dancing script";
+    font-weight:700;
+}
+.doughtype,
+.veg,
+.protien,
+.sauce,
+.mozzarella,
+#final{
+    font-size:35px;
+    color:black;
+    font-family:"quicksand";
+    display: flex;
+    margin-bottom:40px;
+    margin-top:30px;
+    float:left;
+    width:725px;
+    height:530px;
+}
+.doughtype img,
+.veg img,
+.protien img,
+.sauce img,
+.mozzarella img,
+#final img{
+    width:350px;
+    height:450px;
+    margin-right:60px;
+    margin-left:10px;
+}
+#final {
+    visibility: hidden;
+}
+.body1 label{
+    cursor: pointer;
+}
+.body1 .menu{
+    color:black;
+    font: size 20px;
+    
+}
+.body1 dt{
+    color:green;
+    font-size:40px;
+    font-family:"dancing script";
+    font-weight:700;
+}
+.body1 dd{
+    color:black;
+    font-weight: 300;
+    font-size: 20px;
+}
+.body1 .menu img,
+.body1 .menu video{
+    width: 250px;
+    height: 350px;
+    border-style: ridge;
+    border-color:black;
+    border-radius: 20px;
+}
+.body1 .costum img{
+    width:350px;
+    height:500px;
+    border-style:ridge;
+    border-color:black;
+    border-radius:20px;
+}
+.mar,
+.meat,
+.pepp,
+.CHICK-BBQ,
+.ranch,
+.chicken,
+.viggie,
+.alf,
+.haw,
+.mushroom,
+.seafood,
+.sal,
+.shrimp,
+.per{
+    float:left;
+    margin-top:15px;
+    margin-left:15%;
+    width:25%;
+    text-align: center;
+    padding-left:10px;
+    padding-right:10px;
+}
+.clear{
+    clear:both;
+}
+
+.body1 footer{
+    background:transparent;
+    text-align: center;
+    color:black;
+    padding:15px 0;
+    font-size:14px; 
+    position: relative;
+}
+.body1 footer a{
+    color:black;
+}
