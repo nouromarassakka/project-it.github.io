@@ -52,10 +52,10 @@ function myFunction() { //POPUP ALERT
     let styleLink = document.getElementById('styleLink');
     var currentStyle = styleLink.getAttribute('href');
   
-    if (currentStyle === 'style.css') {
-      styleLink.setAttribute('href', 'style1.css');
-    } else {
+    if (currentStyle === 'style1.css') {
       styleLink.setAttribute('href', 'style2.css');
+    } else {
+      styleLink.setAttribute('href', 'style1.css');
     }
   };
   const signUpButton = document.getElementById('loginn');
