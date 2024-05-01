@@ -21,6 +21,11 @@ function check() {
       });
       x.querySelector('.f1 p').innerHTML = innerHTMLContent;
 }
+function res(){
+  let x=document.getElementById('final');
+  let y=document.getElementById('p1');
+  x.style.visibility='hidden';
+}
 function dark(){
   let styleLink = document.getElementById('styleLink');
   let currentStyle = styleLink.getAttribute('href');
